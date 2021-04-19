@@ -1,0 +1,782 @@
+{
+	"info": {
+		"_postman_id": "3a1a406f-484b-4d0f-be8d-320d5db06af2",
+		"name": "Genexus Servicios Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WS - CabalEmbozado",
+			"item": [
+				{
+					"name": "Rest Contrato - Testing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Hugo Gonzalez\",\r\n    \"Documento\": \"4475198\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.5.2.51:8084/cabalembozado/rest/prcServicioContrato",
+							"protocol": "http",
+							"host": [
+								"10",
+								"5",
+								"2",
+								"51"
+							],
+							"port": "8084",
+							"path": [
+								"cabalembozado",
+								"rest",
+								"prcServicioContrato"
+							]
+						},
+						"description": "Endpoint creado para la aplicación de Embozado"
+					},
+					"response": []
+				},
+				{
+					"name": "Rest Contrato - PreProd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Juan Bautista Zarate\",\r\n    \"Documento\": \"3643476\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.5.1.30:8084/cabalembozado/rest/prcServicioContrato",
+							"protocol": "http",
+							"host": [
+								"10",
+								"5",
+								"1",
+								"30"
+							],
+							"port": "8084",
+							"path": [
+								"cabalembozado",
+								"rest",
+								"prcServicioContrato"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rest Contrato - PRODUCCION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"ROSA GIMENEZ CASTILLO\",\r\n    \"Documento\": \"4741570\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.5.1.18:8080/cabalembozado/rest/prcServicioContrato",
+							"protocol": "http",
+							"host": [
+								"10",
+								"5",
+								"1",
+								"18"
+							],
+							"port": "8080",
+							"path": [
+								"cabalembozado",
+								"rest",
+								"prcServicioContrato"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rest Contrato - LocalHost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Hugo Gonzalez\",\r\n    \"Documento\": \"s5ds65ffh575198\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/CabalEmbozadoJavaEnvironment/rest/prcServicioContrato",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CabalEmbozadoJavaEnvironment",
+								"rest",
+								"prcServicioContrato"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rest HealthCheck",
+			"item": [
+				{
+					"name": "LocalHost - HealthCheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"In\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/CabalEmbozadoJavaEnvironment/rest/prcServiciohealthCheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CabalEmbozadoJavaEnvironment",
+								"rest",
+								"prcServiciohealthCheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WS - DIMO_SERVICES",
+			"item": [
+				{
+					"name": "LimiteTRXBancard",
+					"item": [
+						{
+							"name": "ws_LimiteTRXBancard - LocalHost",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQyNzk1OTgsInN1YiI6Ikl5YWxUbDhLUnNSTFZmOUdXdzNJZFE9PSJ9.K5m50t4EGFH1UkpQ7fYdV3WI-tesVkMbXEf1c7Av874",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Monto\":100000,\r\n    \"Entidad\":\"51\",\r\n    \"NumCuenta\":\"123123123123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/DimoServicesJavaEnvironment/rest/ws_Limite_TRX_Bancard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"DimoServicesJavaEnvironment",
+										"rest",
+										"ws_Limite_TRX_Bancard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ws_LimiteTRXBancard - Testing",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQyNzk1OTgsInN1YiI6Ikl5YWxUbDhLUnNSTFZmOUdXdzNJZFE9PSJ9.K5m50t4EGFH1UkpQ7fYdV3WI-tesVkMbXEf1c7Av874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Monto\":100000,\r\n    \"Entidad\":\"51\",\r\n    \"NumCuenta\":\"123123123123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.2.51:8084/dimoservices/rest/ws_Limite_TRX_Bancard",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"2",
+										"51"
+									],
+									"port": "8084",
+									"path": [
+										"dimoservices",
+										"rest",
+										"ws_Limite_TRX_Bancard"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						},
+						{
+							"name": "ws_LimiteTRXBancard - PreProd",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQyNzk1OTgsInN1YiI6Ikl5YWxUbDhLUnNSTFZmOUdXdzNJZFE9PSJ9.K5m50t4EGFH1UkpQ7fYdV3WI-tesVkMbXEf1c7Av874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Monto\":100000,\r\n    \"Entidad\":\"51\",\r\n    \"NumCuenta\":\"123123123123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.1.30:8084/dimoservices/rest/ws_Limite_TRX_Bancard",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"1",
+										"30"
+									],
+									"port": "8084",
+									"path": [
+										"dimoservices",
+										"rest",
+										"ws_Limite_TRX_Bancard"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Participante - TipoCuenta",
+					"item": [
+						{
+							"name": "ws_ParticipanteTipoCuenta - LocalHost",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/DimoServicesJavaEnvironment/rest/ws_ParticipanteTipoCuenta",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"DimoServicesJavaEnvironment",
+										"rest",
+										"ws_ParticipanteTipoCuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ws_ParticipanteTipoCuenta - LocalHost",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/DimoServicesJavaEnvironment/rest/ws_ParticipanteTipoCuenta",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"DimoServicesJavaEnvironment",
+												"rest",
+												"ws_ParticipanteTipoCuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "Apache-Coyote/1.1"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Thu, 11 Feb 2021 13:11:03 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "345"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 11 Feb 2021 13:11:04 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"CodigoParticipanteGW\": \"1608\",\n            \"FormatoAyuda\": \"Formato Ej: 01-000123-123-4\",\n            \"FormatoCuenta\": \"^[0-9]{2}-[0-9]{6}-[0-9]{3}-[0-9]{1}$\",\n            \"Sigla\": \"CCAHOD\"\n        },\n        {\n            \"CodigoParticipanteGW\": \"1612\",\n            \"FormatoAyuda\": \"prue-ba-s-ervicio\",\n            \"FormatoCuenta\": \"esto es una prueba para el SERVICIO\",\n            \"Sigla\": \"CRDD\"\n        }\n    ],\n    \"header\": {\n        \"codReturn\": \"0\",\n        \"txtReturn\": \"success\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "ws_ParticipanteTipoCuenta - Testing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.2.51:8084/dimoservices/rest/ws_ParticipanteTipoCuenta",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"2",
+										"51"
+									],
+									"port": "8084",
+									"path": [
+										"dimoservices",
+										"rest",
+										"ws_ParticipanteTipoCuenta"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						},
+						{
+							"name": "ws_ParticipanteTipoCuenta - PRODUCCION",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.1.18:8080/dimoservices/rest/ws_ParticipanteTipoCuenta",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"1",
+										"18"
+									],
+									"port": "8080",
+									"path": [
+										"dimoservices",
+										"rest",
+										"ws_ParticipanteTipoCuenta"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "funcionalidad_dimo",
+					"item": [
+						{
+							"name": "ws_funcionalidad_dimo - LocalHost",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"codigo\":\"PAGOSCOOPCUENTAS\",\r\n  \"documento\": \"5108798\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/DimoServicesJavaEnvironment/rest/ws_funcionalidad_dimo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"DimoServicesJavaEnvironment",
+										"rest",
+										"ws_funcionalidad_dimo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ws_funcionalidad_dimo - Testing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"codigo\":\"PAGOSCOOPCUENTAS\",\r\n  \"documento\": \"5108798\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.2.51:8084/dimoservices/rest/ws_funcionalidad_dimo",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"2",
+										"51"
+									],
+									"port": "8084",
+									"path": [
+										"dimoservices",
+										"rest",
+										"ws_funcionalidad_dimo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ws_funcionalidad_dimo - PreProd",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"codigo\":\"PAGOSCOOPCUENTAS\",\r\n  \"documento\": \"5108798\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.2.51:8084/dimoservices/rest/ws_funcionalidad_dimo",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"2",
+										"51"
+									],
+									"port": "8084",
+									"path": [
+										"dimoservices",
+										"rest",
+										"ws_funcionalidad_dimo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "WS - CabalCRM",
+			"item": [
+				{
+					"name": "Usuario Nuevo",
+					"item": [
+						{
+							"name": "WS_CargarNuevoUsuario - LocalHost",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ClienteId\": 11111111111,\r\n    \"NroDocumento\": \"5050550\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/CabalCrmJavaEnvironment/rest/WS_CargarNuevoUsuario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CabalCrmJavaEnvironment",
+										"rest",
+										"WS_CargarNuevoUsuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "WS_CargarNuevoUsuario - Testing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"UsuarioId\": 213123123,\r\n    \"NroDocumento\": \"4564313\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.2.51:8084/cabalcrm/rest/WS_CargarNuevoUsuario",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"2",
+										"51"
+									],
+									"port": "8084",
+									"path": [
+										"cabalcrm",
+										"rest",
+										"WS_CargarNuevoUsuario"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Actualizar Datos Usuarios",
+					"item": [
+						{
+							"name": "WS_CargarDatosBapy - LocalHost",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/CabalCrmJavaEnvironment/rest/WS_CargarDatosBapy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"CabalCrmJavaEnvironment",
+										"rest",
+										"WS_CargarDatosBapy"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "WS_CargarDatosBapy - Testing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.2.51:8084/cabalcrm/rest/WS_CargarDatosBapy",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"2",
+										"51"
+									],
+									"port": "8084",
+									"path": [
+										"cabalcrm",
+										"rest",
+										"WS_CargarDatosBapy"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						},
+						{
+							"name": "WS_CargarDatosBapy - PreProd",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.1.30:8084/cabalcrm/rest/WS_CargarDatosBapy",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"1",
+										"30"
+									],
+									"port": "8084",
+									"path": [
+										"cabalcrm",
+										"rest",
+										"WS_CargarDatosBapy"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						},
+						{
+							"name": "WS_CargarDatosBapy - PRODUCCION",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.5.1.18:8080/cabalcrm/rest/WS_CargarDatosBapy",
+									"protocol": "http",
+									"host": [
+										"10",
+										"5",
+										"1",
+										"18"
+									],
+									"port": "8080",
+									"path": [
+										"cabalcrm",
+										"rest",
+										"WS_CargarDatosBapy"
+									]
+								},
+								"description": "Endpoint creado para la aplicación de Embozado"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
